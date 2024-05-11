@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static 'img/logo.png'%}" alt="my logo" />
+    </div>
+    <div class="about-description-container center-column">
+        <div class="center-column">
+            <h1>My role as developer</h1>
+
+            <h2>Darius</h2>
+        </div>
+        <p>
+            As a web developer skilled in HTML, CSS, and JavaScript, I specialize in building responsive websites and
+            translating
+            design concepts into functional code. I leverage frameworks like React and Bootstrap to create dynamic user
+            experiences.
+            I thrive in collaborative environments and am committed to continuous learning. Let's work together to
+            create something
+            amazing!
+        </p>
+
+        <div class="skill-list center-column">
+            <h2>My Skills</h2>
+
+            <div class="tags-container center-row">
+                <label>HTML</label>
+                <label>CSS</label>
+                <label>JavaScript</label>
+                <label>jQuery</label>
+                <label>React</label>
+                <label>Python</label>
+                <label>GitHub</label>
+                <label>Scrum</label>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
