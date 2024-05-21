@@ -20,7 +20,7 @@
     <header class="center-row">
         <!-- Left Side-->
         <div class="logo center-row">
-            <a href="">
+            <a href="{% url 'about' %}">
                 <h2>Darius</h2>
             </a>
         </div>
@@ -52,15 +52,15 @@
     {% endblock content %}
 <footer class="center-row">
     <div class="logo center-row">
-        <a href="">
+        <a href="{% url 'about' %}">
             <h2>Darius</h2>
         </a>
     </div>
     <nav>
         <!--Menu link option-->
         <div class="nav-link center-row">
-            <a href="">About Me</a>
-            <a href="">Projects</a>
+            <a href="{% url 'about' %}">About Me</a>
+            <a href="{% url 'projects' %}">Projects</a>
             <a href="">Experience</a>
             <a href="">Contact</a>
         </div>
